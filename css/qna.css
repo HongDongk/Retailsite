@@ -1,0 +1,429 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: block;
+  position: sticky;
+  top: 0.1px;
+  background-color: white;
+  z-index: 1;
+}
+
+#top_header {
+  width: 100%;
+  height: 32px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+#login_things {
+  width: 1920px;
+  float: right;
+}
+#login_things > ul > li > a > img {
+  width: 20px;
+  height: 20px;
+}
+#login_things > ul > li {
+  margin-right: 30px;
+  margin-top: 5px;
+}
+#login_things > ul {
+  list-style: none;
+  display: inline-flex;
+  float: right;
+}
+#menu_list > ul {
+  list-style: none;
+  display: inline-flex;
+  float: right;
+}
+#menu_list > ul > li > a > img {
+  width: 25px;
+  height: 25px;
+}
+
+#menu_list > ul > li {
+  margin-right: 30px;
+}
+#menu_list > ul > li > a > img {
+  transform: translate(0, -5%);
+}
+
+#menu_list > ul > li > a {
+  text-decoration: none;
+}
+
+#bottom_header {
+  height: 68px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+#logo_name > p {
+  transform: translate(0, 40%);
+}
+#logo_name > p > a {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: bold;
+  margin-left: 30px;
+  font-size: 40px;
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+a:link {
+  color: #000;
+}
+
+#menu_list > ul {
+  transform: translate(0, -80%);
+}
+
+#logo_name {
+  transform: translate(0, -20%);
+}
+
+/* 고객센터 영역 */
+
+.notice_wrapper {
+  width: 1280px;
+  margin: 3% auto 10%;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+  width: 280px;
+  text-align: center;
+}
+
+.left ul.left_list {
+  display: block !important;
+  float: none !important;
+  text-align: left;
+  padding-left: 4.8em;
+}
+
+.left h2 {
+  margin-bottom: 4%;
+  font-size: 2em;
+}
+
+.left_list li {
+  width: 280px;
+  margin-bottom: 4%;
+}
+
+.left_list li a {
+  color: #888;
+}
+
+.list2 {
+  color: #000 !important;
+  font-weight: bold !important;
+}
+
+.right {
+  float: left;
+  width: 1000px;
+}
+
+.right h3 {
+  margin-bottom: 1.5%;
+  font-size: 1.5em;
+}
+
+.right > a {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.8em;
+  margin: 1.3% 0;
+  color: #aaa;
+  transition: all 0.2s;
+}
+
+.right > a:hover {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+}
+
+.all {
+  background-color: #000;
+  color: #fff !important;
+}
+
+.policy {
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #eee;
+  transition: all 0.4s;
+  cursor: pointer;
+  color: #888;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.policy.last {
+  border-bottom: 1px solid #eee;
+}
+
+.policy > p {
+  display: inline-block;
+}
+
+.policy span {
+  float: right;
+}
+
+.policy span a {
+  color: #ccc;
+}
+
+.p1 {
+  padding-top: 1%;
+}
+.box {
+  background-color: #eee;
+  overflow: hidden;
+  padding: 0 2%;
+  width: 100%;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+
+.box p {
+  margin-bottom: 3%;
+  line-height: 2em;
+  font-size: 0.8em;
+  display: inline-block;
+  text-align: left;
+}
+
+.box h4,
+.box h5 {
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.box i {
+  line-height: 2em;
+  font-size: 0.8em;
+}
+
+.box span {
+  float: right;
+  font-size: 0.8em;
+  color: red;
+}
+
+.box ul {
+  font-size: 0.8em;
+  line-height: 2em;
+}
+
+.box h6 {
+  font-weight: normal;
+  margin-bottom: 2%;
+  font-size: 0.8em;
+}
+
+.page {
+  margin: 2% 0;
+  text-align: center;
+}
+
+.page > a {
+  display: inline-block;
+  margin-right: 2.5%;
+  color: #888;
+  font-size: 0.95em;
+}
+
+.page a:hover {
+  text-decoration: underline;
+}
+
+.page1 {
+  color: #000 !important;
+  font-weight: bold;
+}
+
+/* 푸터영역 */
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  height: 456px;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+#up_footer {
+  height: 256px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+#up_footer_01 {
+  width: 100%;
+  display: inline-flex;
+}
+
+#how_to_use {
+  height: 249px;
+  width: 240px;
+  display: block;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#for_the_customers {
+  height: 249px;
+  width: 240px;
+  display: block;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#hermes_time {
+  height: 260px;
+  width: 450px;
+  float: right;
+  margin-top: 40px;
+}
+
+#hermes_time > ul > li > h2 {
+  font-size: 16px;
+}
+
+#how_to_use > ul > li > h2 {
+  font-size: 16px;
+}
+
+#for_the_customers > ul > li > h2 {
+  font-size: 16px;
+}
+
+#hermes_time > ul > li {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+#how_to_use > ul > li {
+  margin-bottom: 10px;
+}
+
+#for_the_customers > ul > li {
+  margin-bottom: 10px;
+}
+
+a:visited,
+a:link,
+a:active {
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#ask_q_a {
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  width: 105px;
+  height: 34px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#ask_q_a > p {
+  transform: translate(0, 50%);
+}
+
+#site_information_02 > p {
+  font-size: 13px;
+  color: rgb(128, 128, 128);
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+#site_information_03 > p {
+  font-size: 12px;
+  color: rgb(128, 128, 128);
+  margin-left: 40px;
+}
+#site_information_01 {
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+#site_information_01 > ul {
+  display: inline-flex;
+}
+
+#site_information_01 > ul > li {
+  margin-right: 16px;
+}
+
+#site_information_01 > ul > li:last-child {
+  font-weight: bold;
+}
+#site_information_02 {
+  margin-top: 30px;
+}
+#site_information_03 {
+  margin-top: 30px;
+}
+
+#site_sns {
+  float: right;
+  transform: translate(0, -400%);
+}
+
+#sns_icons > ul > li > a > img {
+  width: 20px;
+  height: 20px;
+}
+
+#sns_icons > ul {
+  display: inline-flex;
+}
+
+#sns_icons > ul > li {
+  margin-right: 30px;
+}
+
+#site_name_01 > p {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.4);
+}
+
+#site_name_01 {
+  transform: translate(30%, 700%);
+  width: 100px;
+}
+
+/* ------------------아코디언메뉴------------------- */
+
+.active,
+.policy:hover {
+  background-color: #ccc;
+}

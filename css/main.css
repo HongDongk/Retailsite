@@ -1,0 +1,578 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#main::-webkit-scrollbar {
+  display: none;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: block;
+  position: sticky;
+  top: 0.1px;
+  background-color: white;
+  z-index: 1;
+}
+
+#top_header {
+  width: 100%;
+  height: 32px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+#login_things {
+  width: 1920px;
+  float: right;
+}
+#login_things > ul > li > a > img {
+  width: 20px;
+  height: 20px;
+}
+#login_things > ul > li {
+  margin-right: 30px;
+  margin-top: 5px;
+}
+#login_things > ul {
+  list-style: none;
+  display: inline-flex;
+  float: right;
+}
+#menu_list > ul {
+  list-style: none;
+  display: inline-flex;
+  float: right;
+}
+#menu_list > ul > li > a > img {
+  width: 25px;
+  height: 25px;
+}
+
+#menu_list > ul > li {
+  margin-right: 30px;
+}
+#menu_list > ul > li > a > img {
+  transform: translate(0, -5%);
+}
+
+#menu_list > ul > li > a {
+  text-decoration: none;
+}
+
+#bottom_header {
+  height: 68px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+#logo_name > p {
+  transform: translate(0, 40%);
+}
+#logo_name > p > a {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: bold;
+  margin-left: 30px;
+  font-size: 40px;
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+a:link {
+  color: #000;
+}
+
+#menu_list > ul {
+  transform: translate(0, -80%);
+}
+
+#logo_name {
+  transform: translate(0, -20%);
+}
+
+#banner {
+  scroll-snap-align: center;
+  width: 100%;
+  height: 100vh;
+}
+#banner_img {
+  background-image: url(../img/diorstussy.jpg);
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background-position: center;
+  scroll-snap-align: center;
+}
+#banner_img > img {
+  width: 100%;
+}
+#banner02 {
+  background-image: url(../img/진짜슈프림.jpg);
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  scroll-snap-align: center;
+  height: 100vh;
+}
+#item01 {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 110vh;
+  padding: 40px;
+}
+#item02 {
+  scroll-snap-align: center;
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+  margin-bottom: 100px;
+}
+#item02 img {
+  background-color: rgba(185, 252, 189);
+}
+#item02 img:hover {
+  background-color: rgba(192, 204, 251);
+}
+.item_type {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px;
+}
+#item_info {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.product_item {
+  justify-content: center;
+  width: 240px;
+  position: relative;
+}
+.item_img > img {
+  width: 240px;
+  height: 240px;
+  background: rgba(240, 250, 260);
+  border: 1px none;
+  border-radius: 10px;
+}
+.item_img > img:hover {
+  background-color: blanchedalmond;
+}
+.item_img > i {
+  position: absolute;
+  top: 18px;
+  left: 215px;
+}
+.item_img > i:hover {
+  background-image: url(../img/bookmark-solid.svg);
+}
+.iten_img > img:hover {
+  color: red;
+}
+.item_brand {
+  border-bottom: 1px solid;
+  line-height: 30px;
+}
+.item_name {
+  line-height: 20px;
+}
+.item_name > p {
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+.item_name > p + p {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 0.8rem;
+}
+.item_price {
+  display: flex;
+  color: #449ce8;
+}
+
+#all_item01 {
+  margin: 50px 0px;
+}
+#all_item02 {
+  margin: 50px 0px;
+}
+.more > a {
+  border: 1px solid white;
+  border-radius: 45px;
+  margin: 0 auto;
+  width: 220px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: lavender;
+  font-size: 20px;
+  font-weight: bold;
+}
+.more > a:hover {
+  background-color: darkgrey;
+}
+#more_codi {
+  position: relative;
+  bottom: 90px;
+}
+#item_type > p {
+  margin-bottom: 20px;
+}
+#hot_brand {
+  width: 1280px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 30px 0px;
+  flex-wrap: wrap;
+}
+#brand_img {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  background-image: url(../img/디올르.png);
+  width: 250px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+}
+#brand_info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#brand02_img {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  background-image: url(../img/스투시\ 핫\ 브랜드.png);
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#brand02_info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#brand03_img {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  background-image: url(../img/에르메스\ 핫.jpg);
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#brand03_info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#brand04_img {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  background-image: url(../img/메종마르지엘라핫.png);
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#brand04_info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#brand05_img {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  background-image: url(../img/슈프림\ 핫브랜드.webp);
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#brand05_info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#brand06_img {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  background-image: url(../img/베르사체\ 핫\ 브랜드.webp);
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#brand06_info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#brand07_img {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  background-image: url(../img/딥티크.png);
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#brand07_info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#brand08_img {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  background-image: url(../img/샤넬.png);
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#brand08_info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#brand09_img {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  background-image: url(../img/우엉미.png);
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#brand09_info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#brand10_img {
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  background-image: url(../img/발렝시아가.png);
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#brand10_info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#hot_brand > div {
+  margin-bottom: 20px;
+}
+#style {
+  width: 1280px;
+  height: 100vh;
+}
+#style_big_content {
+  display: flex;
+  margin: 0 auto;
+  width: 1280px;
+  justify-content: space-between;
+}
+.style_content {
+  width: 250px;
+}
+#style_img01 {
+  border: 1px solid lightgrey;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  background-image: url(../img/오늘의코디/스투시여자분.jpeg);
+  width: 250px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.style_user_id {
+  display: flex;
+  justify-content: flex-start;
+  margin: 15px 0px;
+}
+.style_user_id > p {
+  font-size: 1rem;
+  margin-left: 10px;
+  font-weight: bold;
+  color: rgba(34, 34, 34, 0.8);
+}
+#style_user_img01 {
+  background-image: url(../img/오늘의코디/첫번째\ 스타일\ 유저\ 이미지.jpg);
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.style_item_info {
+  display: flex;
+  flex-wrap: wrap;
+}
+#style_item_img01 {
+  background-image: url(../img/오늘의코디/1.스투시\ 여자분\ 상의.jpg);
+  width: 80px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.style_icon {
+  display: flex;
+  font-size: 1.2rem;
+  color: rgba(34, 34, 34, 0.5);
+  margin: 15px 0px;
+}
+.style_first_icon:hover {
+  color: red;
+}
+.style_second_icon:hover {
+  color: #449ce8;
+}
+.style_icon > p {
+  font-size: 1rem;
+}
+.style_first_icon {
+  display: flex;
+  padding-right: 10px;
+}
+.style_second_icon {
+  display: flex;
+}
+.style_item_info > p {
+  font-size: 0.7rem;
+}
+.style_info {
+  display: flex;
+}
+.style_price > p {
+  font-size: 0.7rem;
+}
+#style_item_img02 {
+  background-image: url(../img/오늘의코디/1스투시\ 여성분\ 에어포스신발.png);
+  width: 80px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#style_img02 {
+  border: 1px solid lightgrey;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  background-image: url(../img/오늘의코디/두번째\ 남성분\ 사진.jpeg);
+  width: 250px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#style_user_img02 {
+  background-image: url(../img/오늘의코디/두번째\ 남성분\ user_img.jpeg);
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+#style_item_img03 {
+  background-image: url(../img/오늘의코디/두번째\ 남성분\ Item.webp);
+  width: 80px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#style_img03 {
+  border: 1px solid lightgrey;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  background-image: url(../img/오늘의코디/style\ 세번째\ 여성분\ 사진.jpeg);
+  width: 250px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#style_user_img03 {
+  background-image: url(../img/오늘의코디/세번째\ 여성분\ 신발.png);
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+#style_item_img04 {
+  background-image: url(../img/오늘의코디/세번째\ 여성분\ 신발.png);
+  width: 80px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#style_img04 {
+  border: 1px solid lightgrey;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  background-image: url(../img/오늘의코디/네번째\ 여성분\ 사진.jpeg);
+  width: 250px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#style_user_img04 {
+  background-image: url(../img/오늘의코디/네번째\ 여성분\ user_img.jpeg);
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+#style_item_img05 {
+  background-image: url(../img/오늘의코디/네번째\ 여성분\ 사진.webp);
+  width: 80px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#style_item_img06 {
+  background-image: url(../img/오늘의코디/네번째\ 여성분\ 아이템사진.webp);
+  width: 80px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#Luxury {
+  margin-bottom: 100px;
+}
+#Style {
+  margin-bottom: 100px;
+}

@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  height: 456px;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+#up_footer {
+  height: 256px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+#up_footer_01 {
+  width: 100%;
+  display: inline-flex;
+}
+
+#how_to_use {
+  height: 249px;
+  width: 240px;
+  display: block;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#for_the_customers {
+  height: 249px;
+  width: 240px;
+  display: block;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#hermes_time {
+  height: 260px;
+  width: 450px;
+  float: right;
+  margin-top: 40px;
+}
+
+#hermes_time > ul > li > h2 {
+  font-size: 16px;
+}
+
+#how_to_use > ul > li > h2 {
+  font-size: 16px;
+}
+
+#for_the_customers > ul > li > h2 {
+  font-size: 16px;
+}
+
+#hermes_time > ul > li {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+#how_to_use > ul > li {
+  margin-bottom: 10px;
+}
+
+#for_the_customers > ul > li {
+  margin-bottom: 10px;
+}
+
+a:visited,
+a:link,
+a:active {
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#ask_q_a {
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  width: 105px;
+  height: 34px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#ask_q_a > p {
+  transform: translate(0, 50%);
+}
+
+#site_information_02 > p {
+  font-size: 13px;
+  color: rgb(128, 128, 128);
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+#site_information_03 > p {
+  font-size: 12px;
+  color: rgb(128, 128, 128);
+  margin-left: 40px;
+}
+#site_information_01 {
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+#site_information_01 > ul {
+  display: inline-flex;
+}
+
+#site_information_01 > ul > li {
+  margin-right: 16px;
+}
+
+#site_information_01 > ul > li:last-child {
+  font-weight: bold;
+}
+#site_information_02 {
+  margin-top: 30px;
+}
+#site_information_03 {
+  margin-top: 30px;
+}
+
+#site_sns {
+  float: right;
+  transform: translate(0, -400%);
+}
+
+#sns_icons > ul > li > a > img {
+  width: 20px;
+  height: 20px;
+}
+
+#sns_icons > ul {
+  display: inline-flex;
+}
+
+#sns_icons > ul > li {
+  margin-right: 30px;
+}
+
+#site_name_01 > p {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.4);
+}
+
+#site_name_01 {
+  transform: translate(30%, 700%);
+  width: 100px;
+}
